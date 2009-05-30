@@ -1,0 +1,25 @@
+Changes in version 0.3.1 (2009-4-14)
+fix bugs about config file's location
+
+Changes in version 0.3.0 (2009-2-19)
+support rails 2.3
+
+Changes in version 0.2.2 (2008-11-25)
+-------------------------------------
+fix a bug due to miss dependency "uri"
+
+Changes in version 0.2.1 (2008-07-10)
+-------------------------------------
+support rails 2.1
+
+Changes in version 0.2.0 (2008-05-20)
+-------------------------------------
+refactory for folder structure, don't copy files to app
+
+Changes in version 0.1.1 (2008-05-19)
+-------------------------------------
+fix a bug about sub-directories' number 
+
+Changes in version 0.1.0 (2008-05-18)
+-------------------------------------
+initial release

@@ -1,0 +1,32 @@
+Filemanager, release 0.2.2 (Nov. 2008)
+Rails项目的在线文件管理器
+
+特性
+=======
+1. 文件或目录的浏览，复制，剪切，粘帖，重命名，删除，创建等功能
+2. 解压zip文件
+3. 压缩并下载指定的多个文件或目录
+4. 上传文件
+5. 根据文件格式查看文件
+6. 文件或目录名国际化，页面描述国际化
+
+设置
+=======
+#将下列语句加入environment.rb的顶部
+
+$FM_OVERWRITE = true
+require 'filemanager'
+
+#注意: 如果你需要保留你项目中对Filemanager的改变，你可以删除$FM_OVERWRITE这一行
+#但同时也会导致Filemanager升级时某些组件不能发生作用，你可以根据需要调整$FM_OVERWRITE的设定
+
+使用
+=======
+启动rails后访问 http://localhost:3000/fm/filemanager
+多数功能都会列在右键菜单中
+
+配置文件保存在 "RAILS_ROOT/confile/filemanager.yml"
+默认的管理目录在 "RAILS_ROOT/public/fm_resources"
+页面描述i18n在 "RAILS_ROOT/public/filemanager/javascripts/lang"
+
+Copyright (c) 2008 Leon Li, released under the MIT license
