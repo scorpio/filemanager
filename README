@@ -1,0 +1,39 @@
+Filemanager, release 0.3.1 (May. 2009)
+A online file manager for rails project http://rubyforge.org/projects/filemanager/
+
+Feature
+=======
+1. browse, copy, cut, paste, rename, delete, create funtion for file/folder
+2. unzip function for zip file
+3. zip and download files
+4. upload file
+5. view file by type (picture, movie, office file, plain file)
+6. support internationalization of both file path and page description
+
+Install
+=======
+gem install filemanager
+
+Setup
+=======
+#add the following code at the top of environment.rb
+
+$FM_OVERWRITE = true
+require 'filemanager'
+
+#note: you can remove $FM_OVERWRITE definition, if you want to keep the change of filemanager's file in your rails project,
+#and meanwhile some updates will be not available if filemanager updated, you can change it according to your need
+
+Usage
+=======
+visiting http://localhost:3000/fm/filemanager after rails started
+most functions are listed in the popup menu after right click on different object
+
+configuration file at "RAILS_ROOT/confile/filemanager.yml"
+default managed folder is "RAILS_ROOT/public/fm_resources"
+i18n file in "RAILS_ROOT/public/filemanager/javascripts/lang"
+
+Screenshot
+=======
+
+Copyright (c) 2008 Leon Li, released under the MIT license
