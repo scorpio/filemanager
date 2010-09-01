@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
   s.email = "scorpio_leon@hotmail.com"
   s.files = PKG_FILES
   s.description = <<-EOF
-    A online file manager for rails project£¬support file/folder actions such as browse, create, rename, remove, copy, move, zip download, upload, unzip, view
+    A online file manager for rails project, support file/folder actions such as browse, create, rename, remove, copy, move, zip download, upload, unzip, view
   EOF
 end
 Rake::GemPackageTask.new(spec) do |pkg|
