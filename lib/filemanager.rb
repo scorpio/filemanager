@@ -20,7 +20,7 @@ end
 
 FM_CONFIG_FILE = File.join(RAILS_ROOT, 'config', 'filemanager.yml')
 unless File.exist?(FM_CONFIG_FILE)
-  FileUtils.cp(File.join(FM_ROOT, 'filemanager.yml'))
+  FileUtils.cp(File.join(FM_ROOT, 'filemanager.yml'), FM_CONFIG_FILE)
 end
 require "erb"
 require "yaml"
