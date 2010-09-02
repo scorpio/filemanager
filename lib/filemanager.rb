@@ -46,6 +46,10 @@ FM_ENCODING_TO   = $FM_PROPERTIES['encoding.to']
 FM_ENCODING_FROM = $FM_PROPERTIES['encoding.from'].nil? ? '' : $FM_PROPERTIES['encoding.from']
 
 FM_TEMP_DIR      = $FM_PROPERTIES['temp.dir'].nil? ? File.join(FM_ROOT, 'temp') : $FM_PROPERTIES['temp.dir']
-
+if Rails.version =~ /^3/
+  Rails::Application.routes.draw do
+    match 'fm/filemanager(/:action)' => 'fm/filemanager'
+  end
+end
 FileUtils.rm_rf(Dir.glob("#{FM_TEMP_DIR}/*"))
 
